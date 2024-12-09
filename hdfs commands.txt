@@ -1,0 +1,28 @@
+hdfs namenode -format
+start-dfs.cmd
+start-yarn.cmd
+jps 
+
+
+hdfs dfs -mkdir -p /data/project3
+
+hdfs dfs -put K:/hadoop_data/test.json /data/project3/
+hdfs dfs -put K:/hadoop_data/test.txt /data/project3/
+hdfs dfs -put K:/hadoop_data/test.csv /data/project3/
+
+hdfs dfs -ls /data/project3
+
+hdfs dfs -cat /data/project3/test.json
+hdfs dfs -cat /data/project3/test.txt
+hdfs dfs -cat /data/project3/test.csv
+
+
+hdfs dfs -put -f K:/hadoop_data/test.json /data/project3/
+hdfs dfs -put -f K:/hadoop_data/test.csv /data/project3/
+hdfs dfs -put -f K:/hadoop_data/test.txt /data/project3/
+
+conda activate venv/ 
+
+ganache
+
+python projectt.py
