@@ -1,3 +1,6 @@
+Blockchain-based File Integrity Verification in
+HDFS
+
 Overview of the Project
 This project implements a Blockchain-Based File Integrity Verification System that integrates Hadoop Distributed File System (HDFS) and Ethereum Blockchain to ensure the integrity of files and directories. It addresses the need to detect tampering or malicious modifications to files stored in a distributed environment. By leveraging blockchain's immutability, the system tracks file metadata and directory-level hashes to detect unauthorized changes.
 
